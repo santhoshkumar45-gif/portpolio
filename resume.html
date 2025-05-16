@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Access</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: #00ffff;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Background image + animation */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('img/796832.jpg') no-repeat center center fixed;
+      background-size: cover;
+      z-index: -2;
+      filter: brightness(0.4) contrast(1.1) saturate(1.2);
+    }
+
+    body::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(-45deg, rgba(0,255,255,0.1), rgba(0,0,0,0.4), rgba(0,255,255,0.1));
+      background-size: 400% 400%;
+      animation: animateBG 12s ease infinite;
+      z-index: -1;
+    }
+
+    @keyframes animateBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .profile-image {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #00ffff;
+      box-shadow: 0 0 10px #00ffff;
+      z-index: 1000;
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .container {
+      position: relative;
+      top: 40%;
+      transform: translateY(-50%);
+    }
+
+    h1 {
+      font-size: 3em;
+      text-shadow: 0 0 12px #00ffff;
+      margin-bottom: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px 20px;
+      padding: 14px 28px;
+      font-size: 1.1em;
+      background-color: rgba(0, 0, 0, 0.6);
+      border: 2px solid #00ffff;
+      border-radius: 12px;
+      color: #00ffff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #00ffff;
+      color: #000;
+      box-shadow: 0 0 15px #00ffff, 0 0 25px #00ffff;
+    }
+
+    #s1 {
+      padding-top: 50px;
+    }
+
+    #s2 {
+      color:blue;
+      text-decoration: none;
+    }
+
+    #s2:hover {
+      color: aquamarine;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Profile Image -->
+  <div class="profile-image">
+    <img src="img/5141b5e4-b111-4aec-abb8-829137b0ac68.jpg" alt="My Photo" />
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Access My Resume</h1>
+    <a class="btn" href="Resume.pdf.pdf" target="_blank">View Resume</a>
+    <a class="btn" href="Resume.pdf.pdf" download>Download Resume</a>
+    <p id="s1">Switch the page on career? <a id="s2" href="career.html">Career way</a></p>
+  </div>
+
+</body>
+</html>
