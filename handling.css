@@ -1,0 +1,92 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+#ss{
+    padding-left:70%;
+    padding-bottom:100%;
+}
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Project link section */
+.project-link {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.project-link a {
+    font-size: 1.2rem;
+    color: #007BFF;
+    text-decoration: none;
+    border: 1px solid #007BFF;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.project-link a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Gallery section */
+.gallery {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.images img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
