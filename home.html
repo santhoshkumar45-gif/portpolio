@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GAMER XO - Welcome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      background: url(img/anime-night-sky-illustration.jpg) no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #00ffe5;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .glass-button {
+      padding: 15px 30px ;
+      border: none;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      font-size: 1.3rem;
+      cursor: pointer;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    .glass-button:hover {
+      background: rgba(0, 255, 255, 0.2);
+      transform: scale(1.05);
+    }
+
+    .subtext {
+      font-size: 1.1rem;
+      color: #371ca4;
+      text-align: center;
+      padding-top: 50px;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      .glass-button {
+        font-size: 1rem;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to,</h1>
+  <h2>MY Digital Workspace</h2>
+  <div class="button-container">
+    <button class="glass-button" onclick="location.href='career.html'" >Career</button>
+    <button class="glass-button" onclick="location.href='resume.html'">Resume</button>
+  </div>
+  <p class="subtext">Let's begin. Start career way!</p>
+</body>
+</html>
