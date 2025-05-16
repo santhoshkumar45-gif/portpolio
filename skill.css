@@ -1,0 +1,71 @@
+.skills-section {
+  background: url(img/ai.jpg) repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  scroll-behavior: smooth;
+ background-position: center;
+ background-size: cover;
+
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00f8ff;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #00f8ff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.skill-box {
+  background-color: #333;
+  border-radius: 15px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 15px rgba(0, 248, 255, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-10px);
+}
+
+.skill-box img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.skill-box h3 {
+  color: #00f8ff;
+  margin-bottom: 10px;
+}
+
+.skill-box p {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.4;
+}
