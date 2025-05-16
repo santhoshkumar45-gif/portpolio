@@ -1,0 +1,240 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ccc;
+  background-color: #111;
+}
+
+html, body {
+  height: 100%;
+}
+
+
+body {
+  background-color: #111;
+  background: url(img/796832.jpg) no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  scroll-behavior: smooth;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.sidebar {
+  width: 320px;
+  background-color: #1b1b1b;
+  padding: 20px;
+  border-right: 2px solid #00f8ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-box {
+  width: 120px;
+  height: 120px;
+  background-color: #222;
+  border: 2px solid #00f8ff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00f8ffcc;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.profile-info {
+  text-align: center;
+  background: none;
+  box-shadow: none;
+}
+
+.profile-info h2 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #00f8ff;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.profile-info .job-title {
+  font-weight: 400;
+  color: #777;
+  margin-bottom: 20px;
+  background: none;
+}
+
+.info-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #bbb;
+  background: none;
+}
+
+.info-item strong {
+  color: #eee;
+}
+
+/* Main content */
+.main-content {
+  flex-grow: 1;
+  padding: 40px 50px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+/* Navigation tabs */
+.nav-tabs {
+  margin-bottom: 30px;
+}
+
+.nav-tabs .tab {
+  background-color: hsl(144, 13%, 53%);
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+  margin-right: 10px;
+  color: #666;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-tabs .tab.active,
+.nav-tabs .tab:hover {
+  background-color: #00f8ff;
+  color: #111;
+}
+
+/* About section */
+.about-section h1 {
+  color: #00f8ff;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-section ul {
+  list-style: disc inside;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #eee;
+  max-width: 750px;
+}
+
+.about-section ul li {
+  margin-bottom: 12px;
+}
+
+#aa {
+  padding-top: 20px;
+}
+
+/* What I'm Doing boxes */
+.what-im-doing {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 50px;
+  padding-top: 20px;
+}
+
+.box {
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00f8ff33;
+  padding: 25px 30px;
+  width: 280px;
+}
+
+.box h3 {
+  color: #00f8ff;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.box p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+/* Next button */
+.next-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.next-button {
+  background-color: #00f8ff;
+  border: none;
+  border-radius: 30px;
+  color: #111;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 36px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #00f8ffcc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.next-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #00f8ffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #00f8ff;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px 10px;
+  }
+
+  .image-box {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0;
+  }
+
+  .profile-info h2 {
+    font-size: 18px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .what-im-doing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+  }
+}
